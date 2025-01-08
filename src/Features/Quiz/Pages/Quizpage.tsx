@@ -7,7 +7,6 @@ const QuizPage = () => {
   const navigate = useNavigate();
 
   const category = quizData.find((cat) => cat.id === categoryId);
-  console.log(category);
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]);
