@@ -70,6 +70,9 @@ const SignupPage = () => {
         <button className="w-full p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
           Signup
         </button>
+        <p className="mt-5">
+          Already have an account? <a href="/login">login</a>
+        </p>
       </form>
     </div>
   );

@@ -55,6 +55,9 @@ const LoginPage = () => {
         <button className="w-full p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
           Login
         </button>
+        <p className="mt-5">
+          Don't have an account? <a href="/signup">signup</a>
+        </p>
       </form>
     </div>
   );

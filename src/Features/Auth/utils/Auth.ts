@@ -7,7 +7,7 @@ interface User {
 export const signupUser = (email: string, password: string, name: string) => {
   const users: User[] = JSON.parse(localStorage.getItem("users") || "[]");
   if (users.find((user: User) => user.email === email)) {
-    return { success: false, message: "Email already exists" };
+    return { success: false, message: "Account already exists" };
   }
   users.push({ name, email, password });
   localStorage.setItem("users", JSON.stringify(users));
