@@ -13,8 +13,8 @@ export interface Category {
 export const quizData: Category[] = [
   {
     id: "1",
-    name: "General Knowledge",
-    description: "Test your knowledge on various topics.",
+    name: "General",
+    description: "Test your knowledge.",
     questions: [
       {
         id: "1",
@@ -38,6 +38,44 @@ export const quizData: Category[] = [
   {
     id: "2",
     name: "Science",
+    description: "Explore the world of science.",
+    questions: [
+      {
+        id: "1",
+        question: "What planet is known as the Red Planet?",
+        choices: ["Earth", "Mars", "Venus", "Jupiter"],
+        correctAnswer: "Mars",
+      },
+      {
+        id: "2",
+        question: "What is the chemical symbol for water?",
+        choices: ["H2O", "O2", "CO2", "NaCl"],
+        correctAnswer: "H2O",
+      },
+    ],
+  },
+  {
+    id: "3",
+    name: "History",
+    description: "Explore the world of science.",
+    questions: [
+      {
+        id: "1",
+        question: "What planet is known as the Red Planet?",
+        choices: ["Earth", "Mars", "Venus", "Jupiter"],
+        correctAnswer: "Mars",
+      },
+      {
+        id: "2",
+        question: "What is the chemical symbol for water?",
+        choices: ["H2O", "O2", "CO2", "NaCl"],
+        correctAnswer: "H2O",
+      },
+    ],
+  },
+  {
+    id: "4",
+    name: "Geography",
     description: "Explore the world of science.",
     questions: [
       {
