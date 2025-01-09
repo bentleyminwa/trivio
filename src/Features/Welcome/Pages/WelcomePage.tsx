@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Button from "../../../Shared/Components/Button/Button";
 import Logo from "../../../Shared/Components/Logo/Logo";
 
 const WelcomePage = () => {
@@ -9,7 +10,7 @@ const WelcomePage = () => {
   }
 
   return (
-    <main className="h-screen w-10/12 mx-auto">
+    <main className="h-screen w-10/12 mx-auto overflow-y-hidden">
       <Logo />
       <section className="py-5 font-semibold flex flex-col justify-center items-center">
         <h2 className="text-center">
@@ -19,14 +20,9 @@ const WelcomePage = () => {
         <img
           src="./src/Assets/Images/vector.png"
           alt=""
-          className="w-[500px] mb-5"
+          className="w-[400px] mb-5"
         />
-        <button
-          onClick={handleClick}
-          className="border border-accent rounded-full bg-accent text-bg font-bold px-5 py-3 tracking-wide"
-        >
-          Get Started
-        </button>
+        <Button onClick={handleClick}>Get Started</Button>
       </section>
     </main>
   );
