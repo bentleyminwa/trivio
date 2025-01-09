@@ -1,15 +1,10 @@
-import { useContext } from "react";
 import Button from "../../../Shared/Components/Button/Button";
 import FormComponent from "../Components/FormComponent";
-import { AuthContext } from "../Context/AuthStore";
+import Input from "../Components/InputComponent";
+import { useAuth } from "../Hooks/useAuth";
 
 const SignupPage = () => {
-  const context = useContext(AuthContext);
-  if (!context) {
-    throw new Error("useAuth must be used within an AuthProvider");
-  }
-
-  const { handleSignup, handleChange, formData } = context;
+  const { handleSignup, handleChange, formData } = useAuth();
 
   return (
     <div className="flex flex-col items-center p-6">
@@ -20,13 +15,11 @@ const SignupPage = () => {
       >
         <div className="mb-4">
           <label className="block mb-2 font-semibold">Name</label>
-          <input
+          <Input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            required
-            className="w-full p-2 border rounded-md"
           />
         </div>
         <FormComponent />

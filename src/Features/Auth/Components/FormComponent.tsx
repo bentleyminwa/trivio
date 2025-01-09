@@ -1,36 +1,27 @@
-import { useContext } from "react";
-import { AuthContext } from "../Context/AuthStore";
+import { useAuth } from "../Hooks/useAuth";
+import Input from "./InputComponent";
 
 const FormComponent = () => {
-  const context = useContext(AuthContext);
-  if (!context) {
-    throw new Error("useAuth must be used within an AuthProvider");
-  }
-
-  const { formData, error, handleChange } = context;
+  const { formData, error, handleChange } = useAuth();
 
   return (
     <>
       <div className="mb-4">
         <label className="block mb-2 font-semibold">Email</label>
-        <input
+        <Input
           type="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
-          required
-          className="w-full p-2 border rounded-md"
         />
       </div>
       <div className="mb-4">
         <label className="block mb-2 font-semibold">Password</label>
-        <input
+        <Input
           type="password"
           name="password"
           value={formData.password}
           onChange={handleChange}
-          required
-          className="w-full p-2 border rounded-md"
         />
       </div>
       {error && <p className="text-red-500 mb-4">{error}</p>}

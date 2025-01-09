@@ -1,15 +1,9 @@
-import { useContext } from "react";
 import Button from "../../../Shared/Components/Button/Button";
 import FormComponent from "../Components/FormComponent";
-import { AuthContext } from "../Context/AuthStore";
+import { useAuth } from "../Hooks/useAuth";
 
 const LoginPage = () => {
-  const context = useContext(AuthContext);
-  if (!context) {
-    throw new Error("useAuth must be used within an AuthProvider");
-  }
-
-  const { handleLogin } = context;
+  const { handleLogin } = useAuth();
 
   return (
     <div className="flex flex-col items-center p-6">
