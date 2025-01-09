@@ -56,7 +56,7 @@ const ResultsPage = () => {
           {category.name} Quiz Results
         </h1>
         <div className="w-full max-w-lg p-10 my-10 bg-white shadow-lg rounded-lg">
-          <h2 className="text-lg font-semibold mb-4">
+          <h2 className="text-lg text-gray-500 font-semibold mb-4">
             You scored {score} out of {totalQuestions}!
           </h2>
           <div className="space-y-4">
