@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import Button from "../../../Shared/Components/Button/Button";
+import Header from "../../../Shared/Components/Header/Header";
 import { quizData } from "../../../Shared/Data/quizData";
 
 const QuizPage = () => {
@@ -33,38 +35,41 @@ const QuizPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center p-6">
-      <h1 className="text-2xl font-bold mb-4">{category.name} Quiz</h1>
-      <div className="w-full max-w-lg p-6 bg-white shadow-md rounded-lg">
-        <h2 className="text-lg font-semibold mb-4">
-          Question {currentQuestionIndex + 1} of {category.questions.length}
-        </h2>
-        <p className="mb-6">{currentQuestion.question}</p>
-        <div className="flex flex-col gap-4">
-          {currentQuestion.choices.map((choice, index) => (
-            <button
-              key={index}
-              onClick={() => handleAnswerSelect(choice)}
-              className={`w-full p-3 text-left border rounded-lg transition ${
-                selectedAnswers[currentQuestionIndex] === choice
-                  ? "bg-blue-100 border-blue-500"
-                  : "border-gray-300 hover:border-blue-300"
-              }`}
-            >
-              {choice}
-            </button>
-          ))}
+    <main className="h-screen">
+      <Header />
+      <section className="w-10/12 mx-auto flex flex-col justify-center items-center">
+        <h1 className="text-2xl text-gray-600 font-bold">
+          {category.name} Quiz
+        </h1>
+        <div className="w-full max-w-screen-md p-10 bg-white shadow-lg rounded-lg my-10">
+          <h2 className="text-lg font-semibold mb-4 text-gray-500">
+            Question {currentQuestionIndex + 1} of {category.questions.length}
+          </h2>
+          <p className="mb-6">{currentQuestion.question}</p>
+          <div className="flex flex-col gap-4">
+            {currentQuestion.choices.map((choice, index) => (
+              <button
+                key={index}
+                onClick={() => handleAnswerSelect(choice)}
+                className={`w-full p-3 text-left text-sm border rounded-lg transition ${
+                  selectedAnswers[currentQuestionIndex] === choice
+                    ? "bg-blue-100 border-blue-500"
+                    : "border-gray-300 hover:border-blue-300"
+                }`}
+              >
+                {choice}
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
-      <button
-        onClick={handleNextQuestion}
-        className="mt-6 px-6 py-2 rounded-md bg-blue-500 text-white font-semibold hover:bg-blue-600 transition"
-      >
-        {currentQuestionIndex < category.questions.length - 1
-          ? "Next Question"
-          : "Submit Quiz"}
-      </button>
-    </div>
+
+        <Button onClick={handleNextQuestion}>
+          {currentQuestionIndex < category.questions.length - 1
+            ? "Next Question"
+            : "Submit Quiz"}
+        </Button>
+      </section>
+    </main>
   );
 };
 
