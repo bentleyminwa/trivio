@@ -14,12 +14,12 @@ const SignupPage = () => {
         </h1>
       </header>
       <section className="flex flex-col items-center">
-        <h2 className="text-xl font-bold mt-7 text-gray-600">
+        <h2 className="text-xl font-bold mt-7 text-gray-500">
           Register for an Account
         </h2>
         <form
           onSubmit={handleSignup}
-          className="w-full max-w-sm my-7 p-6 bg-white shadow-md rounded-lg"
+          className="w-full max-w-sm my-7 p-10 bg-white shadow-lg rounded-lg"
         >
           <div className="mb-4">
             <label className="block mb-2 font-semibold text-gray-500">
@@ -30,13 +30,17 @@ const SignupPage = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
+              placeholder="e.g. Kotal Khan"
             />
           </div>
           <FormComponent />
           <Button>Create Account</Button>
         </form>
-        <p>
-          Already have an account? <a href="/login">login</a>
+        <p className="text-sm font-semibold text-gray-500 ">
+          Already have an account?{" "}
+          <a href="/login" className="underline">
+            login
+          </a>
         </p>
       </section>
     </main>

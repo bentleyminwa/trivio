@@ -7,16 +7,19 @@ const FormComponent = () => {
   return (
     <>
       <div className="mb-4">
-        <label className="block mb-2 font-semibold">Email</label>
+        <label className="block mb-2 font-semibold text-gray-500">Email</label>
         <Input
           type="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
+          placeholder="e.g. Khan@gmail.com"
         />
       </div>
       <div className="mb-4">
-        <label className="block mb-2 font-semibold">Password</label>
+        <label className="block mb-2 font-semibold text-gray-500">
+          Password
+        </label>
         <Input
           type="password"
           name="password"
