@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import Button from "../../../Shared/Components/Button/Button";
+import { PageVariants } from "../../../Shared/Motion/Motion";
 import FormComponent from "../Components/FormComponent";
 import { useAuth } from "../Hooks/useAuth";
 
@@ -6,7 +8,13 @@ const LoginPage = () => {
   const { handleLogin } = useAuth();
 
   return (
-    <main className="h-screen grid grid-cols-1 md:grid-cols-2">
+    <motion.main
+      variants={PageVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="h-screen grid grid-cols-1 md:grid-cols-2"
+    >
       <section className="bg-white w-full hidden md:flex justify-center items-center ">
         <img src="./src/Assets/Images/vector.png" alt="" className="min-w-80" />
       </section>
@@ -35,7 +43,7 @@ const LoginPage = () => {
           </p>
         </div>
       </section>
-    </main>
+    </motion.main>
   );
 };
 

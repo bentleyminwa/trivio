@@ -1,7 +1,9 @@
+import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import vector from "../../../Assets/Images/vector.png";
 import Button from "../../../Shared/Components/Button/Button";
 import Logo from "../../../Shared/Components/Logo/Logo";
+import { PageVariants } from "../../../Shared/Motion/Motion";
 
 const WelcomePage = () => {
   const navigate = useNavigate();
@@ -11,7 +13,13 @@ const WelcomePage = () => {
   }
 
   return (
-    <main className="h-screen w-10/12 mx-auto overflow-y-hidden">
+    <motion.main
+      variants={PageVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="h-screen w-10/12 mx-auto overflow-y-hidden"
+    >
       <Logo />
       <section className="py-5 font-semibold flex flex-col justify-center items-center">
         <h2 className="text-center">
@@ -21,7 +29,7 @@ const WelcomePage = () => {
         <img src={vector} alt="" className="w-[400px] mb-5" />
         <Button onClick={handleClick}>Get Started</Button>
       </section>
-    </main>
+    </motion.main>
   );
 };
 

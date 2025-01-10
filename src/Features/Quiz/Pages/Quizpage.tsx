@@ -1,8 +1,10 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Button from "../../../Shared/Components/Button/Button";
 import Header from "../../../Shared/Components/Header/Header";
 import { quizData } from "../../../Shared/Data/quizData";
+import { PageVariants } from "../../../Shared/Motion/Motion";
 
 const QuizPage = () => {
   const { categoryId } = useParams<{ categoryId: string }>();
@@ -35,7 +37,13 @@ const QuizPage = () => {
   };
 
   return (
-    <main className="h-screen">
+    <motion.main
+      variants={PageVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="h-screen"
+    >
       <Header />
       <section className="w-10/12 mx-auto flex flex-col justify-center items-center">
         <h1 className="text-2xl text-gray-600 font-bold">
@@ -69,7 +77,7 @@ const QuizPage = () => {
             : "Submit Quiz"}
         </Button>
       </section>
-    </main>
+    </motion.main>
   );
 };
 

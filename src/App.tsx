@@ -1,5 +1,6 @@
+import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import LoginPage from "./Features/Auth/Pages/LoginPage";
 import SignupPage from "./Features/Auth/Pages/SignupPage";
 import CategoryPage from "./Features/Categories/Pages/CategoryPage";
@@ -10,6 +11,7 @@ import Loader from "./Shared/Components/Loader/Loader";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     setTimeout(() => {
@@ -23,14 +25,16 @@ const App = () => {
 
   return (
     <div className="font-primary bg-bg max-h-screen max-w-[100vw] text-primary">
-      <Routes>
-        <Route path="/" element={<WelcomePage />} />
-        <Route path="/signup" element={<SignupPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/category" element={<CategoryPage />} />
-        <Route path="/quiz/:categoryId" element={<Quizpage />} />
-        <Route path="/results" element={<ResultsPage />} />
-      </Routes>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.key}>
+          <Route path="/" element={<WelcomePage />} />
+          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/category" element={<CategoryPage />} />
+          <Route path="/quiz/:categoryId" element={<Quizpage />} />
+          <Route path="/results" element={<ResultsPage />} />
+        </Routes>
+      </AnimatePresence>
     </div>
   );
 };

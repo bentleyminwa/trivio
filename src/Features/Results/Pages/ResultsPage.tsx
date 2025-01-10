@@ -1,6 +1,8 @@
+import { motion } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
 import Button from "../../../Shared/Components/Button/Button";
 import Header from "../../../Shared/Components/Header/Header";
+import { PageVariants } from "../../../Shared/Motion/Motion";
 
 interface LocationState {
   selectedAnswers: string[];
@@ -49,7 +51,13 @@ const ResultsPage = () => {
   const totalQuestions = category.questions.length;
 
   return (
-    <main className="min-h-screen">
+    <motion.main
+      variants={PageVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="min-h-screen"
+    >
       <Header />
       <section className="w-10/12 mx-auto flex flex-col justify-center items-center">
         <h1 className="text-2xl text-gray-500 font-bold mb-4">
@@ -83,7 +91,7 @@ const ResultsPage = () => {
         </div>
         <Button onClick={() => navigate("/category")}>Play Again</Button>
       </section>
-    </main>
+    </motion.main>
   );
 };
 

@@ -1,8 +1,10 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../../Shared/Components/Button/Button";
 import Header from "../../../Shared/Components/Header/Header";
 import { quizData } from "../../../Shared/Data/quizData";
+import { PageVariants } from "../../../Shared/Motion/Motion";
 import CategoryCard from "../Components/CategoryCard";
 
 const CategoryPage = () => {
@@ -21,7 +23,13 @@ const CategoryPage = () => {
   };
 
   return (
-    <main className="h-screen">
+    <motion.main
+      variants={PageVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="h-screen"
+    >
       <Header />
       <section className="w-10/12 mx-auto flex flex-col justify-center items-center">
         <h1 className="text-2xl text-gray-600 font-bold">Select a Category</h1>
@@ -36,10 +44,23 @@ const CategoryPage = () => {
           ))}
         </div>
         {selectedCategory && (
-          <Button onClick={handleStartQuiz}>Start Quiz</Button>
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 1,
+                type: "spring",
+                stiffness: 120,
+              },
+            }}
+          >
+            <Button onClick={handleStartQuiz}>Start Quiz</Button>
+          </motion.div>
         )}
       </section>
-    </main>
+    </motion.main>
   );
 };
 
