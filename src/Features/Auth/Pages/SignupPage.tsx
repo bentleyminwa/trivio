@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Button from "../../../Shared/Components/Button/Button";
 import { PageVariants } from "../../../Shared/Motion/Motion";
 import FormComponent from "../Components/FormComponent";
@@ -49,10 +50,10 @@ const SignupPage = () => {
             <Button>Create Account</Button>
           </form>
           <p className="text-sm font-semibold text-gray-500 ">
-            Already have an account?{" "}
-            <a href="/login" className="underline">
-              login
-            </a>
+            Already have an account?
+            <Link to="/login">
+              <span className="underline">login</span>
+            </Link>
           </p>
         </div>
       </section>
