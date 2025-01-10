@@ -28,12 +28,25 @@ const CategoryPage = () => {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="h-screen"
+      className="h-full"
     >
       <Header />
-      <section className="w-10/12 mx-auto flex flex-col justify-center items-center">
+      <section className="w-10/12 mx-auto flex flex-col justify-center items-center my-5">
         <h1 className="text-2xl text-gray-600 font-bold">Select a Category</h1>
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 my-10">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              delay: 1,
+              duration: 1,
+              type: "spring",
+              stiffness: 300,
+            },
+          }}
+          className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 my-10"
+        >
           {quizData.map((category) => (
             <CategoryCard
               key={category.id}
@@ -42,7 +55,7 @@ const CategoryPage = () => {
               handleCategorySelect={handleCategorySelect}
             />
           ))}
-        </div>
+        </motion.div>
         {selectedCategory && (
           <motion.div
             initial={{ opacity: 0, x: -20 }}

@@ -56,10 +56,10 @@ const ResultsPage = () => {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="min-h-screen"
+      className="h-full"
     >
       <Header />
-      <section className="w-10/12 mx-auto flex flex-col justify-center items-center">
+      <section className="w-10/12 mx-auto flex flex-col justify-center items-center pb-10">
         <h1 className="text-2xl text-gray-500 font-bold mb-4">
           {category.name} Quiz Results
         </h1>

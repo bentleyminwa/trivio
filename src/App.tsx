@@ -24,7 +24,7 @@ const App = () => {
   }
 
   return (
-    <div className="font-primary bg-bg max-h-screen max-w-[100vw] text-primary">
+    <div className="font-primary bg-bg min-h-screen max-w-[100vw] text-primary">
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.key}>
           <Route path="/" element={<WelcomePage />} />
