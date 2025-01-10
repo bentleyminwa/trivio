@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import LoginPage from "./Features/Auth/Pages/LoginPage";
 import SignupPage from "./Features/Auth/Pages/SignupPage";
@@ -5,8 +6,21 @@ import CategoryPage from "./Features/Categories/Pages/CategoryPage";
 import Quizpage from "./Features/Quiz/Pages/Quizpage";
 import ResultsPage from "./Features/Results/Pages/ResultsPage";
 import WelcomePage from "./Features/Welcome/Pages/WelcomePage";
+import Loader from "./Shared/Components/Loader/Loader";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, [loading]);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <div className="font-primary bg-bg max-h-screen max-w-[100vw] text-primary">
       <Routes>

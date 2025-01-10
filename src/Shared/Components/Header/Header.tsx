@@ -7,7 +7,6 @@ const Header = () => {
         <Logo />
       </div>
       <div>
-        <h3>username</h3>
         <h3>Logout</h3>
       </div>
     </header>
