@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import vector from "../../../Assets/Images/vector.png";
 import Button from "../../../Shared/Components/Button/Button";
 import Logo from "../../../Shared/Components/Logo/Logo";
 
@@ -17,11 +18,7 @@ const WelcomePage = () => {
           Your journey to fun and knowledge begins here. Do you think you have
           what it takes...
         </h2>
-        <img
-          src="./src/Assets/Images/vector.png"
-          alt=""
-          className="w-[400px] mb-5"
-        />
+        <img src={vector} alt="" className="w-[400px] mb-5" />
         <Button onClick={handleClick}>Get Started</Button>
       </section>
     </main>

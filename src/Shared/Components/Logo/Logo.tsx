@@ -1,5 +1,11 @@
+import { Link } from "react-router-dom";
+
 const Logo = () => {
-  return <h1 className="py-10 text-4xl text-accent font-bold">Trivio</h1>;
+  return (
+    <Link to="/">
+      <h1 className="py-10 text-4xl text-accent font-bold">Trivio</h1>
+    </Link>
+  );
 };
 
 export default Logo;

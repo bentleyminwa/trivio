@@ -16,13 +16,15 @@ export const signupUser = (email: string, password: string, name: string) => {
 
 export const loginUser = (email: string, password: string) => {
   const users = JSON.parse(localStorage.getItem("users") || "[]");
-  const user = users.find(
+  const existingUser = users.find(
     (user: User) => user.email === email && user.password === password
   );
-  if (!user) {
+
+  if (!existingUser) {
     return { success: false, message: "Invalid email or password" };
   }
-  localStorage.setItem("currentUser", JSON.stringify(user));
+
+  localStorage.setItem("currentUser", JSON.stringify(existingUser));
   return { success: true, message: "Login successful" };
 };
 

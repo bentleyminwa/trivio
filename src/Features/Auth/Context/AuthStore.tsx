@@ -1,6 +1,6 @@
-import { createContext, useState, ReactNode } from "react";
-import { signupUser, loginUser } from "../utils/Auth";
+import { createContext, ReactNode, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { loginUser, signupUser } from "../utils/Auth";
 
 interface AuthContextType {
   formData: {
@@ -59,4 +59,4 @@ const AuthProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export { AuthProvider, AuthContext };
+export { AuthContext, AuthProvider };
