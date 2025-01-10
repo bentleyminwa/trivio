@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import vector from "../../../Assets/Images/vector.png";
 import Button from "../../../Shared/Components/Button/Button";
 import { PageVariants } from "../../../Shared/Motion/Motion";
 import FormComponent from "../Components/FormComponent";
@@ -18,7 +19,7 @@ const SignupPage = () => {
       className="h-screen grid grid-cols-1 md:grid-cols-2"
     >
       <section className="bg-white w-full hidden md:flex justify-center items-center ">
-        <img src="./src/Assets/Images/vector.png" alt="" className="min-w-80" />
+        <img src={vector} alt="" className="min-w-80" />
       </section>
       <section className="px-10">
         <header>
