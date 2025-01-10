@@ -35,13 +35,13 @@ const CategoryCard = ({
       className={`p-4 w-44 h-44 flex flex-col items-center justify-center border-2 rounded-lg cursor-pointer ${
         selectedCategory === category.id ? "border-accent" : ""
       }
-      ${category.name === "Programming" ? "bg-red-300" : "bg-white"}
-      ${category.name === "Frontend" ? "bg-yellow-300" : "bg-white"}
-      ${category.name === "Backend" ? "bg-pink-300" : "bg-white"}
-      ${category.name === "React" ? "bg-purple-300" : "bg-white"}
-      ${category.name === "Typescript" ? "bg-blue-300" : "bg-white"}
-      ${category.name === "Django" ? "bg-green-500" : "bg-white"}
-      ${category.name === "Kotlin" ? "bg-orange-300" : "bg-white"}
+      ${category.name === "Programming" ? "bg-red-300" : ""}
+      ${category.name === "Frontend" ? "bg-yellow-300" : ""}
+      ${category.name === "Backend" ? "bg-pink-300" : ""}
+      ${category.name === "React" ? "bg-purple-300" : ""}
+      ${category.name === "Typescript" ? "bg-blue-300" : ""}
+      ${category.name === "Django" ? "bg-green-500" : ""}
+      ${category.name === "Kotlin" ? "bg-orange-300" : ""}
         `}
     >
       <h2 className="text-lg font-semibold">{category.name}</h2>
