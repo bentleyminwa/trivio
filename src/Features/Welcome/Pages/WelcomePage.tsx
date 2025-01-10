@@ -26,7 +26,7 @@ const WelcomePage = () => {
           Your journey to fun and knowledge begins here. Do you think you have
           what it takes...
         </h2>
-        <img src={vector} alt="" className="w-[400px] h-[65vh] mb-5" />
+        <img src={vector} alt="" className="w-[400px] h-[60vh] mb-5" />
         <Button onClick={handleClick}>Get Started</Button>
       </section>
     </motion.main>
