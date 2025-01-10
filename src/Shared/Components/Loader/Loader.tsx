@@ -18,7 +18,7 @@ const Loader = () => {
       animate="visible"
       className="h-screen w-screen flex justify-center items-center"
     >
-      <div className="flex items-center gap-3 text-primary">
+      <div className="flex items-center gap-3 text-accent">
         <motion.h1
           initial={{
             opacity: 0,
