@@ -49,7 +49,7 @@ const QuizPage = () => {
         <h1 className="text-2xl text-gray-600 font-bold">
           {category.name} Quiz
         </h1>
-        <div className="w-full max-w-screen-md p-10 bg-white shadow-lg rounded-lg my-10">
+        <div className="w-full max-w-screen-md p-10 bg-bg shadow-lg rounded-lg my-10">
           <h2 className="text-lg font-semibold mb-4 text-gray-500">
             Question {currentQuestionIndex + 1} of {category.questions.length}
           </h2>

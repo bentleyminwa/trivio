@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import vector from "../../../Assets/Images/vector.png";
+import vector from "../../../Assets/Images/vector.svg";
 import Button from "../../../Shared/Components/Button/Button";
 import { PageVariants } from "../../../Shared/Motion/Motion";
 import FormComponent from "../Components/FormComponent";
