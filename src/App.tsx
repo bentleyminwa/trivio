@@ -7,6 +7,7 @@ import CategoryPage from "./Features/Categories/Pages/CategoryPage";
 import Quizpage from "./Features/Quiz/Pages/Quizpage";
 import ResultsPage from "./Features/Results/Pages/ResultsPage";
 import WelcomePage from "./Features/Welcome/Pages/WelcomePage";
+import PrivateRoute from "./Routes/PrivateRoutes";
 import Loader from "./Shared/Components/Loader/Loader";
 
 const App = () => {
@@ -30,8 +31,22 @@ const App = () => {
           <Route path="/" element={<WelcomePage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/category" element={<CategoryPage />} />
-          <Route path="/quiz/:categoryId" element={<Quizpage />} />
+          <Route
+            path="/category"
+            element={
+              <PrivateRoute>
+                <CategoryPage />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/quiz/:categoryId"
+            element={
+              <PrivateRoute>
+                <Quizpage />
+              </PrivateRoute>
+            }
+          />
           <Route path="/results" element={<ResultsPage />} />
         </Routes>
       </AnimatePresence>
