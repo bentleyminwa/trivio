@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useState } from "react";
+import { createContext, ReactNode, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import { loginUser, signupUser } from "../utils/Auth";h
 
@@ -25,6 +25,14 @@ const AuthProvider = ({ children }: { children: ReactNode }) => {
   );
   const [error, setError] = useState("");
   const navigate = useNavigate();
+
+  // persists the user login even after refresh
+  useEffect(() => {
+    const storedUser = localStorage.getItem("currentUser");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
 
   function login(email: string, password: string) {
     const users = JSON.parse(localStorage.getItem("users") || "[]");

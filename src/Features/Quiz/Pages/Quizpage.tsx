@@ -77,9 +77,11 @@ const QuizPage = () => {
           </div>
         </div>
         <div className="flex items-center gap-5">
-          <Button onClick={handlePrevQuestion} className=" text-accent">
-            Prev
-          </Button>
+          {currentQuestionIndex !== 0 && (
+            <Button onClick={handlePrevQuestion} className=" text-accent">
+              Prev
+            </Button>
+          )}
           <Button onClick={handleNextQuestion}>
             {currentQuestionIndex < category.questions.length - 1
               ? "Next"

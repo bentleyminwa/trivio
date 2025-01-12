@@ -11,7 +11,7 @@ const PrivateRoute = ({ children }: PrivateRouteProps) => {
   return user ? (
     children
   ) : (
-    <Navigate to="/login" state={{ credentials: [] }} replace={true} />
+    <Navigate to="/login" state={{ credentials: [] }} replace />
   );
 };
 

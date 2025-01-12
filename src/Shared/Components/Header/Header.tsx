@@ -1,3 +1,4 @@
+import { MdLogout } from "react-icons/md";
 import { useAuth } from "../../../Features/Auth/Hooks/useAuth";
 import Logo from "../Logo/Logo";
 
@@ -9,9 +10,11 @@ const Header = () => {
       <div>
         <Logo />
       </div>
-      <div>
-        <h2>{user?.username}</h2>
-        <h3 onClick={logout}>Logout</h3>
+      <div className="flex items-center gap-3">
+        <h2 className="text-xl font-semibold capitalize">{user?.username}</h2>
+        <button onClick={logout}>
+          <MdLogout className="text-2xl text-red-600" />
+        </button>
       </div>
     </header>
   );
