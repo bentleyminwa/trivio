@@ -27,6 +27,12 @@ const QuizPage = () => {
     setSelectedAnswers(updatedAnswers);
   };
 
+  const handlePrevQuestion = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex((prev) => prev - 1);
+    }
+  };
+
   const handleNextQuestion = () => {
     if (currentQuestionIndex < category.questions.length - 1) {
       setCurrentQuestionIndex((prev) => prev + 1);
@@ -70,12 +76,16 @@ const QuizPage = () => {
             ))}
           </div>
         </div>
-
-        <Button onClick={handleNextQuestion}>
-          {currentQuestionIndex < category.questions.length - 1
-            ? "Next Question"
-            : "Submit Quiz"}
-        </Button>
+        <div className="flex items-center gap-5">
+          <Button onClick={handlePrevQuestion} className=" text-accent">
+            Prev
+          </Button>
+          <Button onClick={handleNextQuestion}>
+            {currentQuestionIndex < category.questions.length - 1
+              ? "Next"
+              : "Submit Quiz"}
+          </Button>
+        </div>
       </section>
     </motion.main>
   );

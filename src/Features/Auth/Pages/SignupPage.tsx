@@ -1,14 +1,23 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import vector from "../../../Assets/Images/vector.svg";
 import Button from "../../../Shared/Components/Button/Button";
 import { PageVariants } from "../../../Shared/Motion/Motion";
-import FormComponent from "../Components/FormComponent";
 import Input from "../Components/InputComponent";
 import { useAuth } from "../Hooks/useAuth";
 
 const SignupPage = () => {
-  const { handleSignup, handleChange, formData } = useAuth();
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { signup, error } = useAuth();
+
+  function handleSignup(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
+    signup(username, email, password);
+  }
 
   return (
     <motion.main
@@ -42,12 +51,41 @@ const SignupPage = () => {
               <Input
                 type="text"
                 name="name"
-                value={formData.name}
-                onChange={handleChange}
+                value={username}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                  setUsername(e.target.value)
+                }
                 placeholder="e.g. Kotal Khan"
               />
             </div>
-            <FormComponent />
+            <div className="mb-4">
+              <label className="block mb-2 font-semibold text-gray-500">
+                Email
+              </label>
+              <Input
+                type="email"
+                name="email"
+                value={email}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                  setEmail(e.target.value)
+                }
+                placeholder="e.g. Khan@gmail.com"
+              />
+            </div>
+            <div className="mb-4">
+              <label className="block mb-2 font-semibold text-gray-500">
+                Password
+              </label>
+              <Input
+                type="password"
+                name="password"
+                value={password}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                  setPassword(e.target.value)
+                }
+              />
+            </div>
+            {error && <p className="text-red-500 mb-4">{error}</p>}
             <Button>Create Account</Button>
           </form>
           <p className="text-sm font-semibold text-gray-500 ">
