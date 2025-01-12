@@ -39,8 +39,8 @@ const CategoryPage = () => {
             opacity: 1,
             x: 0,
             transition: {
-              delay: 1,
-              duration: 1,
+              delay: 0.5,
+              duration: 1.3,
               type: "spring",
               stiffness: 300,
             },
