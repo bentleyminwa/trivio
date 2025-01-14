@@ -4677,6 +4677,772 @@ export const quizData: Category[] = [
         choices: ["Canada", "Russia", "United States", "Australia"],
         correctAnswer: "Canada",
       },
+      {
+        id: "201",
+        question: "Which is the least densely populated country in the world?",
+        choices: ["Mongolia", "Namibia", "Australia", "Iceland"],
+        correctAnswer: "Mongolia",
+      },
+      {
+        id: "202",
+        question: "Which country has the most official languages?",
+        choices: ["South Africa", "Zimbabwe", "India", "Switzerland"],
+        correctAnswer: "Zimbabwe",
+      },
+      {
+        id: "203",
+        question:
+          "What is the longest uninterrupted land border between two countries?",
+        choices: [
+          "USA-Canada",
+          "Russia-Kazakhstan",
+          "Argentina-Chile",
+          "China-Mongolia",
+        ],
+        correctAnswer: "USA-Canada",
+      },
+      {
+        id: "204",
+        question: "Which city is known as the 'City of a Hundred Spires'?",
+        choices: ["Prague", "Vienna", "Budapest", "Warsaw"],
+        correctAnswer: "Prague",
+      },
+      {
+        id: "205",
+        question: "Which river has the largest drainage basin in the world?",
+        choices: ["Amazon River", "Congo River", "Nile River", "Yangtze River"],
+        correctAnswer: "Amazon River",
+      },
+      {
+        id: "206",
+        question:
+          "Mount Chimborazo is the farthest point from the Earth’s center due to Earth's equatorial bulge. In which country is it located?",
+        choices: ["Ecuador", "Peru", "Colombia", "Chile"],
+        correctAnswer: "Ecuador",
+      },
+      {
+        id: "207",
+        question: "Which is the smallest island country by land area?",
+        choices: ["Nauru", "Tuvalu", "Maldives", "Monaco"],
+        correctAnswer: "Nauru",
+      },
+      {
+        id: "208",
+        question: "What is the most volcanically active country in the world?",
+        choices: ["Indonesia", "Japan", "Iceland", "Philippines"],
+        correctAnswer: "Indonesia",
+      },
+      {
+        id: "209",
+        question: "Which desert is the oldest in the world?",
+        choices: ["Sahara", "Namib", "Gobi", "Kalahari"],
+        correctAnswer: "Namib",
+      },
+      {
+        id: "210",
+        question: "Which European country has the most natural lakes?",
+        choices: ["Finland", "Sweden", "Norway", "Russia"],
+        correctAnswer: "Finland",
+      },
+      {
+        id: "211",
+        question: "Which river flows through the Grand Canyon?",
+        choices: [
+          "Colorado River",
+          "Missouri River",
+          "Rio Grande",
+          "Columbia River",
+        ],
+        correctAnswer: "Colorado River",
+      },
+      {
+        id: "212",
+        question: "Which country has the highest number of time zones?",
+        choices: ["France", "Russia", "USA", "China"],
+        correctAnswer: "France",
+      },
+      {
+        id: "213",
+        question: "Which sea has no coastlines?",
+        choices: ["Sargasso Sea", "Dead Sea", "Aral Sea", "Caspian Sea"],
+        correctAnswer: "Sargasso Sea",
+      },
+      {
+        id: "214",
+        question: "What is the capital of Bhutan?",
+        choices: ["Thimphu", "Kathmandu", "Paro", "Dhaka"],
+        correctAnswer: "Thimphu",
+      },
+      {
+        id: "215",
+        question: "Which is the deepest lake in the world?",
+        choices: [
+          "Lake Baikal",
+          "Lake Tanganyika",
+          "Caspian Sea",
+          "Lake Vostok",
+        ],
+        correctAnswer: "Lake Baikal",
+      },
+      {
+        id: "216",
+        question:
+          "In which country can you find the Danakil Depression, one of the hottest places on Earth?",
+        choices: ["Ethiopia", "Sudan", "Djibouti", "Somalia"],
+        correctAnswer: "Ethiopia",
+      },
+      {
+        id: "217",
+        question: "Which country has the most pyramids in the world?",
+        choices: ["Sudan", "Egypt", "Mexico", "Peru"],
+        correctAnswer: "Sudan",
+      },
+      {
+        id: "218",
+        question: "Which country is home to the Pamir Mountains?",
+        choices: ["Tajikistan", "Kyrgyzstan", "Afghanistan", "Uzbekistan"],
+        correctAnswer: "Tajikistan",
+      },
+      {
+        id: "219",
+        question: "Which African country has Spanish as an official language?",
+        choices: ["Equatorial Guinea", "Angola", "Mozambique", "Cape Verde"],
+        correctAnswer: "Equatorial Guinea",
+      },
+      {
+        id: "220",
+        question: "Which city is split by the Bosporus Strait?",
+        choices: ["Istanbul", "Athens", "Baku", "Cairo"],
+        correctAnswer: "Istanbul",
+      },
+      {
+        id: "221",
+        question:
+          "Which is the only country that lies on all four hemispheres?",
+        choices: ["Kiribati", "Indonesia", "Samoa", "Micronesia"],
+        correctAnswer: "Kiribati",
+      },
+      {
+        id: "222",
+        question: "Which mountain range separates Europe and Asia?",
+        choices: [
+          "Ural Mountains",
+          "Caucasus Mountains",
+          "Alps",
+          "Carpathians",
+        ],
+        correctAnswer: "Ural Mountains",
+      },
+      {
+        id: "223",
+        question: "Which country has the longest coastline in the world?",
+        choices: ["Canada", "Russia", "Australia", "USA"],
+        correctAnswer: "Canada",
+      },
+      {
+        id: "224",
+        question: "Where is the world's largest cave located?",
+        choices: ["Vietnam", "Laos", "China", "Thailand"],
+        correctAnswer: "Vietnam",
+      },
+      {
+        id: "225",
+        question: "Which country owns Easter Island?",
+        choices: ["Chile", "Peru", "Argentina", "Ecuador"],
+        correctAnswer: "Chile",
+      },
+      {
+        id: "226",
+        question: "Which European capital city is furthest west?",
+        choices: ["Lisbon", "Dublin", "London", "Madrid"],
+        correctAnswer: "Lisbon",
+      },
+      {
+        id: "227",
+        question: "Which river passes through the most countries?",
+        choices: ["Danube", "Amazon", "Nile", "Congo"],
+        correctAnswer: "Danube",
+      },
+      {
+        id: "228",
+        question:
+          "What is the name of the world's highest uninterrupted waterfall?",
+        choices: [
+          "Angel Falls",
+          "Tugela Falls",
+          "Victoria Falls",
+          "Yumbilla Falls",
+        ],
+        correctAnswer: "Angel Falls",
+      },
+      {
+        id: "229",
+        question: "Which country has a flag with a dragon on it?",
+        choices: ["Bhutan", "Wales", "Nepal", "China"],
+        correctAnswer: "Bhutan",
+      },
+      {
+        id: "230",
+        question: "Which is the only country with a non-rectangular flag?",
+        choices: ["Nepal", "Switzerland", "Vatican City", "Bhutan"],
+        correctAnswer: "Nepal",
+      },
+      {
+        id: "231",
+        question:
+          "Which country has the highest number of islands within its territory?",
+        choices: ["Sweden", "Canada", "Norway", "Finland"],
+        correctAnswer: "Sweden",
+      },
+      {
+        id: "232",
+        question:
+          "Which is the only country in the world that does not have a capital city?",
+        choices: ["Nauru", "Tuvalu", "San Marino", "Vatican City"],
+        correctAnswer: "Nauru",
+      },
+      {
+        id: "233",
+        question: "Which is the flattest country in the world?",
+        choices: ["Maldives", "Denmark", "Netherlands", "Bangladesh"],
+        correctAnswer: "Maldives",
+      },
+      {
+        id: "234",
+        question: "What is the deepest point in the Atlantic Ocean?",
+        choices: [
+          "Puerto Rico Trench",
+          "Java Trench",
+          "Tonga Trench",
+          "South Sandwich Trench",
+        ],
+        correctAnswer: "Puerto Rico Trench",
+      },
+      {
+        id: "235",
+        question: "Which country borders the most other countries in Europe?",
+        choices: ["Germany", "Russia", "France", "Austria"],
+        correctAnswer: "Germany",
+      },
+      {
+        id: "236",
+        question: "Which continent is the only one without deserts?",
+        choices: ["Europe", "Asia", "South America", "Australia"],
+        correctAnswer: "Europe",
+      },
+      {
+        id: "237",
+        question: "Which is the longest mountain range in the world?",
+        choices: ["Andes", "Rockies", "Himalayas", "Alps"],
+        correctAnswer: "Andes",
+      },
+      {
+        id: "238",
+        question: "Where is the coldest inhabited place on Earth?",
+        choices: [
+          "Oymyakon, Russia",
+          "Verkhoyansk, Russia",
+          "Barrow, Alaska",
+          "Norilsk, Russia",
+        ],
+        correctAnswer: "Oymyakon, Russia",
+      },
+      {
+        id: "239",
+        question: "Which country has the most freshwater lakes?",
+        choices: ["Canada", "Russia", "Brazil", "Finland"],
+        correctAnswer: "Canada",
+      },
+      {
+        id: "240",
+        question: "Which is the only river that crosses the equator twice?",
+        choices: ["Congo River", "Amazon River", "Nile River", "Zambezi River"],
+        correctAnswer: "Congo River",
+      },
+      {
+        id: "241",
+        question: "Which country has the most UNESCO World Heritage Sites?",
+        choices: ["Italy", "China", "India", "Spain"],
+        correctAnswer: "Italy",
+      },
+      {
+        id: "242",
+        question: "Which country has the largest number of active volcanoes?",
+        choices: ["Indonesia", "Japan", "Philippines", "Iceland"],
+        correctAnswer: "Indonesia",
+      },
+      {
+        id: "243",
+        question:
+          "Which is the largest enclosed inland body of water on Earth?",
+        choices: [
+          "Caspian Sea",
+          "Lake Superior",
+          "Lake Victoria",
+          "Lake Baikal",
+        ],
+        correctAnswer: "Caspian Sea",
+      },
+      {
+        id: "244",
+        question: "What is the smallest continent by land area?",
+        choices: ["Australia", "Europe", "Antarctica", "South America"],
+        correctAnswer: "Australia",
+      },
+      {
+        id: "245",
+        question: "Which African country is the largest by land area?",
+        choices: ["Algeria", "Sudan", "Democratic Republic of Congo", "Libya"],
+        correctAnswer: "Algeria",
+      },
+      {
+        id: "246",
+        question:
+          "What is the name of the region in Siberia known for its diamond mines?",
+        choices: ["Yakutia", "Chukotka", "Kolyma", "Altai"],
+        correctAnswer: "Yakutia",
+      },
+      {
+        id: "247",
+        question:
+          "Which country is home to the Darvaza Gas Crater, also known as the 'Door to Hell'?",
+        choices: ["Turkmenistan", "Uzbekistan", "Kazakhstan", "Iran"],
+        correctAnswer: "Turkmenistan",
+      },
+      {
+        id: "248",
+        question: "Which is the world's largest archipelago by area?",
+        choices: ["Indonesia", "Philippines", "Canada", "Norway"],
+        correctAnswer: "Indonesia",
+      },
+      {
+        id: "249",
+        question: "Which desert is the largest non-polar desert in the world?",
+        choices: ["Sahara", "Gobi", "Kalahari", "Patagonian"],
+        correctAnswer: "Sahara",
+      },
+      {
+        id: "250",
+        question: "Which is the only sea on Earth with no coastline?",
+        choices: ["Sargasso Sea", "Baltic Sea", "Coral Sea", "Arabian Sea"],
+        correctAnswer: "Sargasso Sea",
+      },
+      {
+        id: "251",
+        question: "Which river forms the border between North Korea and China?",
+        choices: ["Yalu River", "Amnok River", "Tumen River", "Liao River"],
+        correctAnswer: "Yalu River",
+      },
+      {
+        id: "252",
+        question: "Which capital city is the highest above sea level?",
+        choices: ["La Paz", "Quito", "Thimphu", "Kathmandu"],
+        correctAnswer: "La Paz",
+      },
+      {
+        id: "253",
+        question: "Which country owns the Galápagos Islands?",
+        choices: ["Ecuador", "Peru", "Chile", "Colombia"],
+        correctAnswer: "Ecuador",
+      },
+      {
+        id: "254",
+        question: "Which Asian country was formerly known as Ceylon?",
+        choices: ["Sri Lanka", "Myanmar", "Thailand", "Malaysia"],
+        correctAnswer: "Sri Lanka",
+      },
+      {
+        id: "255",
+        question: "Which river is the longest in Europe?",
+        choices: ["Volga", "Danube", "Dnieper", "Rhine"],
+        correctAnswer: "Volga",
+      },
+      {
+        id: "256",
+        question: "Which African river has the largest volume of water?",
+        choices: ["Congo River", "Nile River", "Niger River", "Zambezi River"],
+        correctAnswer: "Congo River",
+      },
+      {
+        id: "257",
+        question: "Which is the most densely populated country in the world?",
+        choices: ["Monaco", "Singapore", "Bangladesh", "Vatican City"],
+        correctAnswer: "Monaco",
+      },
+      {
+        id: "258",
+        question: "Which European country has the most volcanoes?",
+        choices: ["Italy", "Iceland", "Greece", "Spain"],
+        correctAnswer: "Iceland",
+      },
+      {
+        id: "259",
+        question: "Which is the largest bay in the world?",
+        choices: [
+          "Bay of Bengal",
+          "Hudson Bay",
+          "Gulf of Mexico",
+          "Chesapeake Bay",
+        ],
+        correctAnswer: "Bay of Bengal",
+      },
+      {
+        id: "260",
+        question: "Which is the only country that is also a continent?",
+        choices: ["Australia", "Antarctica", "Greenland", "New Zealand"],
+        correctAnswer: "Australia",
+      },
+      {
+        id: "261",
+        question: "Which mountain range forms the backbone of Italy?",
+        choices: ["Apennines", "Alps", "Pyrenees", "Carpathians"],
+        correctAnswer: "Apennines",
+      },
+      {
+        id: "262",
+        question:
+          "Which tectonic plate is responsible for the formation of the Himalayas?",
+        choices: [
+          "Indian Plate",
+          "Eurasian Plate",
+          "Pacific Plate",
+          "African Plate",
+        ],
+        correctAnswer: "Indian Plate",
+      },
+      {
+        id: "263",
+        question:
+          "Which country administers the largest Exclusive Economic Zone (EEZ) in the world?",
+        choices: ["France", "United States", "Australia", "Russia"],
+        correctAnswer: "France",
+      },
+      {
+        id: "264",
+        question:
+          "The Danakil Depression, one of the hottest places on Earth, is located in which country?",
+        choices: ["Ethiopia", "Sudan", "Djibouti", "Somalia"],
+        correctAnswer: "Ethiopia",
+      },
+      {
+        id: "265",
+        question:
+          "Which is the largest endorheic (closed drainage) basin on Earth?",
+        choices: [
+          "Caspian Sea Basin",
+          "Great Basin",
+          "Okavango Basin",
+          "Aral Sea Basin",
+        ],
+        correctAnswer: "Caspian Sea Basin",
+      },
+      {
+        id: "266",
+        question:
+          "Which mountain has the greatest vertical rise from base to summit?",
+        choices: ["Mauna Kea", "Mount Everest", "Denali", "Mount Kilimanjaro"],
+        correctAnswer: "Mauna Kea",
+      },
+      {
+        id: "267",
+        question:
+          "What is the largest known cave system in the world by volume?",
+        choices: [
+          "Son Doong Cave",
+          "Mammoth Cave",
+          "Krubera Cave",
+          "Eisriesenwelt",
+        ],
+        correctAnswer: "Son Doong Cave",
+      },
+      {
+        id: "268",
+        question:
+          "Which desert is known for being the driest non-polar desert on Earth?",
+        choices: [
+          "Atacama Desert",
+          "Kalahari Desert",
+          "Gobi Desert",
+          "Namib Desert",
+        ],
+        correctAnswer: "Atacama Desert",
+      },
+      {
+        id: "269",
+        question: "Which strait connects the Red Sea to the Gulf of Aden?",
+        choices: [
+          "Bab-el-Mandeb",
+          "Hormuz Strait",
+          "Bosporus Strait",
+          "Strait of Gibraltar",
+        ],
+        correctAnswer: "Bab-el-Mandeb",
+      },
+      {
+        id: "270",
+        question: "Which country has the most permafrost area in the world?",
+        choices: ["Russia", "Canada", "Greenland", "Norway"],
+        correctAnswer: "Russia",
+      },
+      {
+        id: "271",
+        question: "Which lake is the world's largest hypersaline lake?",
+        choices: ["Caspian Sea", "Lake Urmia", "Great Salt Lake", "Lake Van"],
+        correctAnswer: "Caspian Sea",
+      },
+      {
+        id: "272",
+        question:
+          "The Mariana Trench is part of which tectonic plate boundary?",
+        choices: [
+          "Pacific Plate and Philippine Plate",
+          "Nazca Plate and Pacific Plate",
+          "Pacific Plate and Eurasian Plate",
+          "Cocos Plate and Caribbean Plate",
+        ],
+        correctAnswer: "Pacific Plate and Philippine Plate",
+      },
+      {
+        id: "273",
+        question: "Which river basin covers the largest area in Africa?",
+        choices: [
+          "Congo River Basin",
+          "Nile River Basin",
+          "Niger River Basin",
+          "Zambezi River Basin",
+        ],
+        correctAnswer: "Congo River Basin",
+      },
+      {
+        id: "274",
+        question:
+          "Which country contains the geographic antipode of Easter Island?",
+        choices: ["India", "India Ocean", "Malawi", "Tanzania"],
+        correctAnswer: "India",
+      },
+      {
+        id: "275",
+        question:
+          "Which mountain range forms the natural border between France and Spain?",
+        choices: ["Pyrenees", "Alps", "Apennines", "Carpathians"],
+        correctAnswer: "Pyrenees",
+      },
+      {
+        id: "276",
+        question: "Which is the world's deepest underwater cave?",
+        choices: [
+          "Hranice Abyss",
+          "Veryovkina Cave",
+          "Krubera Cave",
+          "Sarawak Chamber",
+        ],
+        correctAnswer: "Hranice Abyss",
+      },
+      {
+        id: "277",
+        question: "Which island is the largest in the Mediterranean Sea?",
+        choices: ["Sicily", "Sardinia", "Cyprus", "Crete"],
+        correctAnswer: "Sicily",
+      },
+      {
+        id: "278",
+        question: "Which capital city is furthest from any ocean?",
+        choices: ["Ulaanbaatar", "Nur-Sultan", "Beijing", "Moscow"],
+        correctAnswer: "Ulaanbaatar",
+      },
+      {
+        id: "279",
+        question:
+          "Which lake holds the greatest volume of freshwater on Earth?",
+        choices: [
+          "Lake Baikal",
+          "Lake Superior",
+          "Lake Tanganyika",
+          "Caspian Sea",
+        ],
+        correctAnswer: "Lake Baikal",
+      },
+      {
+        id: "280",
+        question: "Which is the only continent without active volcanoes?",
+        choices: ["Australia", "Europe", "Antarctica", "Africa"],
+        correctAnswer: "Australia",
+      },
+      {
+        id: "281",
+        question:
+          "Which sea has no coastlines and is bounded by ocean currents?",
+        choices: ["Sargasso Sea", "Coral Sea", "Philippine Sea", "Arabian Sea"],
+        correctAnswer: "Sargasso Sea",
+      },
+      {
+        id: "282",
+        question: "Which river has the highest discharge volume in the world?",
+        choices: [
+          "Amazon River",
+          "Congo River",
+          "Yangtze River",
+          "Mississippi River",
+        ],
+        correctAnswer: "Amazon River",
+      },
+      {
+        id: "283",
+        question:
+          "The ancient city of Petra is located in which modern-day country?",
+        choices: ["Jordan", "Saudi Arabia", "Egypt", "Syria"],
+        correctAnswer: "Jordan",
+      },
+      {
+        id: "284",
+        question: "Which is the southernmost active volcano on Earth?",
+        choices: [
+          "Mount Erebus",
+          "Mount Sidley",
+          "Mount Terror",
+          "Mount Berlin",
+        ],
+        correctAnswer: "Mount Erebus",
+      },
+      {
+        id: "285",
+        question: "What is the largest coral reef system in the world?",
+        choices: [
+          "Great Barrier Reef",
+          "Belize Barrier Reef",
+          "New Caledonia Barrier Reef",
+          "Red Sea Coral Reef",
+        ],
+        correctAnswer: "Great Barrier Reef",
+      },
+      {
+        id: "286",
+        question: "Which country contains the highest waterfall in the world?",
+        choices: ["Venezuela", "Brazil", "Norway", "USA"],
+        correctAnswer: "Venezuela",
+      },
+      {
+        id: "287",
+        question: "Which island country lies closest to the Maldives?",
+        choices: ["Sri Lanka", "India", "Indonesia", "Seychelles"],
+        correctAnswer: "Sri Lanka",
+      },
+      {
+        id: "288",
+        question: "Which is the only double landlocked country in Europe?",
+        choices: ["Liechtenstein", "San Marino", "Luxembourg", "Andorra"],
+        correctAnswer: "Liechtenstein",
+      },
+      {
+        id: "289",
+        question: "Which desert is known as the 'Empty Quarter'?",
+        choices: ["Rub' al Khali", "Sahara", "Karakum", "Gobi"],
+        correctAnswer: "Rub' al Khali",
+      },
+      {
+        id: "290",
+        question:
+          "Which country is home to the most UNESCO Biosphere Reserves?",
+        choices: ["Spain", "Germany", "United States", "Mexico"],
+        correctAnswer: "Spain",
+      },
+      {
+        id: "291",
+        question:
+          "Which African lake is known to change size dramatically between wet and dry seasons?",
+        choices: [
+          "Lake Chad",
+          "Lake Victoria",
+          "Lake Tanganyika",
+          "Lake Malawi",
+        ],
+        correctAnswer: "Lake Chad",
+      },
+      {
+        id: "292",
+        question:
+          "Which country owns the majority of the Spratly Islands in the South China Sea?",
+        choices: [
+          "No country owns a majority",
+          "China",
+          "Vietnam",
+          "Philippines",
+        ],
+        correctAnswer: "No country owns a majority",
+      },
+      {
+        id: "293",
+        question:
+          "Which river forms part of the border between North Korea and China?",
+        choices: ["Yalu River", "Tumen River", "Amnok River", "Songhua River"],
+        correctAnswer: "Yalu River",
+      },
+      {
+        id: "294",
+        question:
+          "Which mountain is known for having the greatest topographic prominence?",
+        choices: ["Mount Everest", "Denali", "K2", "Mount Kilimanjaro"],
+        correctAnswer: "Mount Everest",
+      },
+      {
+        id: "295",
+        question:
+          "Which country has the world's largest number of active volcanoes?",
+        choices: ["Indonesia", "Japan", "Iceland", "Philippines"],
+        correctAnswer: "Indonesia",
+      },
+      {
+        id: "296",
+        question: "Which region is home to the world's largest ice cave?",
+        choices: ["Austria", "Iceland", "Greenland", "Switzerland"],
+        correctAnswer: "Austria",
+      },
+      {
+        id: "297",
+        question:
+          "Which city is located at the highest elevation in the world?",
+        choices: [
+          "La Rinconada, Peru",
+          "El Alto, Bolivia",
+          "Lhasa, Tibet",
+          "Potosí, Bolivia",
+        ],
+        correctAnswer: "La Rinconada, Peru",
+      },
+      {
+        id: "298",
+        question:
+          "Which desert in Asia is the largest cold desert in the world?",
+        choices: [
+          "Gobi Desert",
+          "Karakum Desert",
+          "Taklamakan Desert",
+          "Thar Desert",
+        ],
+        correctAnswer: "Gobi Desert",
+      },
+      {
+        id: "299",
+        question: "What is the deepest point in the Earth's oceans?",
+        choices: [
+          "Challenger Deep",
+          "Mariana Trench",
+          "Tonga Trench",
+          "Java Trench",
+        ],
+        correctAnswer: "Challenger Deep",
+      },
+      {
+        id: "300",
+        question: "Which ocean current is the longest in the world?",
+        choices: [
+          "Antarctic Circumpolar Current",
+          "Gulf Stream",
+          "Kuroshio Current",
+          "Agulhas Current",
+        ],
+        correctAnswer: "Antarctic Circumpolar Current",
+      },
     ],
   },
 ];
